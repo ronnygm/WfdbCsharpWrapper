@@ -88,15 +88,15 @@ namespace WfdbCsharpWrapper
         /// <summary>
         /// Gets or sets annotation subtype.
         /// </summary>
-        public AnnotationCode SubType
+        public AnnotationSubType SubType
         {
             get
             {
-                return subType;
+                return (AnnotationSubType)subType;
             }
             set
             {
-                subType = value;
+                subType = (byte)value;
             }
         }
 
