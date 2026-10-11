@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -24,4 +24,8 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 
-</Project>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug' and '$(Platform)' == 'x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <IntermediateOutputPath>obj\x64\Debug\</IntermediateOutputPath>
+  </PropertyGroup></Project>

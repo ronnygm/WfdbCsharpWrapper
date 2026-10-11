@@ -1,3 +1,6 @@
 bin
 obj
 .vs
+
+# Generated NuGet/MSBuild assets for the legacy SDK project layout.
+/Source/WfdbCsharpWrapper.Library/legacy/
