@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <!-- Advertise all project platforms so solution mappings are recognized by
+       Visual Studio when this submodule is loaded independently. -->
+  <PropertyGroup>
+    <Configurations>Debug;Release</Configurations>
+    <Platforms>AnyCPU;x86;x64</Platforms>
+  </PropertyGroup>
+
+  <!-- Keep generated assets beside this legacy project when the submodule is
+       built standalone or from a consuming solution. -->
+  <PropertyGroup Condition="'$(MSBuildProjectName)' == 'WfdbCsharpWrapper.Library'">
+    <MSBuildProjectExtensionsPath>$(MSBuildProjectDirectory)\legacy\</MSBuildProjectExtensionsPath>
+    <BaseIntermediateOutputPath>$(MSBuildProjectExtensionsPath)obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+</Project>
